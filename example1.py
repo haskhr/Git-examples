@@ -1,4 +1,4 @@
 n= input("Please enter your name :")
 print("Hello"+" "+n) 
 #trial test
-# to check the branches 
+# another merging test for 3 way merge
