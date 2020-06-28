@@ -11,9 +11,11 @@ root = xml.getroot()
 
 # Iterate through each child of the root Element 
 for e in root:
+    #print the 'Id' Attribute of tje Element object
+    print(e.get("category"))
     #print the stringfield version of the element
     print(ET.tostring(e))
     print("")
 
     #print the 'Id' Attribute of tje Element object
-    print(e.get("Id"))
+    #print(e.get("category"))
