@@ -48,9 +48,9 @@ with manager.connect(host=router["host"],port=router["port"],username=router["us
 
     config = interface_python["interfaces"]["interface"]
     op_state = interface_python["interfaces-state"]["interface"]
-    ip_add = interface_python[""]
+    ip_add = interface_python["interfaces"]["interface"]["ipv4"]
     print ("Start")
     print ( f"Name : {config['name']['#text']}")
     print ( f"Description : {config['description']}")
     print ( f"Packets In  {op_state['statistics']['in-unicast-pkts']}")
-
+    print (f"IP : {ip_add['address']['ip']}, Netmask : {ip_add['address']['netmask']}")
